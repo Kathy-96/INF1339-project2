@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title></title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js">
+    </script>
+    <script>
+    var url = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=rainbow&api-key=iGRJBxHl5BzZ4Cs6ajByeQ6lVpflBOxg";
+    var articleCount = 0
+    function  setup(){
+        noCanvas();
+        loadJSON(url,gotData);
+    function goData(data){
+        alert("FUNCTION GOT DATA ACTIVATED")
+    }
+    }
+    </script>
+</head>
+<body>
+    <h1>New York Times API:  Articles from all time about rainbows</h1>
+</body>
+</html>
